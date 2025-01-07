@@ -20,14 +20,14 @@ body{
 .city{
     width:"600px"
 }
-.WeatherCards{
+.weather-cards{
     display:flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     
 }
-.weatherCard{
+.weather-card{
     display:"flex";
     align-content:"center";
     justify-content: center;

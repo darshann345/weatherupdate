@@ -3,7 +3,7 @@ import Style from "./Weather.module.css";
 
 const WeatherCard = ({ title, data }) => {
     return (
-        <div className={Style.weatherCard}>
+        <div className={Style.weather-card}>
             <h4 style={{ marginLeft: "25px", marginTop: "-15px" }}>{title}</h4>
             <p style={{ marginLeft: "40px", marginTop: "-15px" }}>{data}</p>
         </div>
@@ -58,10 +58,10 @@ const Weather = () => {
                 />
                 <button className={Style.button} onClick={handleSearch}>Search</button>
             </div>
-            {loading && <p style={{ position: "relative", left: "700px" }}>Loading Data ....</p>}
+            {loading && <p style={{ position: "relative", left: "700px" }}>Loading data...</p>}
             
             {weatherData && (
-                <div className={Style.WeatherCards}>
+                <div className={Style.weather-cards}>
                     <WeatherCard
                         title={"Temperature"}
                         data={`${weatherData.current.temp_c} °C`}
