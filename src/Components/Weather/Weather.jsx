@@ -30,9 +30,8 @@ const Weather = () => {
             const result = await response.json();
             setWeatherData(result);
         } catch (error) {
-            setError(error.message);
-            setWeatherData(null)
-            window.alert("Failed to fetch weather data");
+            setError("Failed to fetch weather data"); // Set a user-friendly error message
+            setWeatherData(null);
         } finally {
             setIsLoading(false);
         }
