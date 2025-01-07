@@ -59,6 +59,7 @@ const Weather = () => {
                 <button className={Style.button} onClick={handleSearch}>Search</button>
             </div>
             {loading && <p style={{ position: "relative", left: "700px" }}>Loading data...</p>}
+            {error && <p style={{ color: 'red', position: "relative", left: "700px" }}>{error}</p>}
             
             {weatherData && (
                 <div className={Style.weather-cards}>
