@@ -21,7 +21,7 @@ const Weather = () => {
         setIsLoading(true);
         setError(null);
         try {
-            const apikey = "33c61b0820a04dff95b123707250601";
+            const apikey = "33c61b0820a04dff95b123707250601"; // Ensure this is a valid API key
             const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${searchCity}`;
             const response = await fetch(apiUrl);
             if (!response.ok) {
